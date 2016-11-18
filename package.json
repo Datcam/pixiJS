@@ -1,0 +1,22 @@
+{
+  "name": "pixi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Datcam/pixiJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Datcam/pixiJS/issues"
+  },
+  "homepage": "https://github.com/Datcam/pixiJS#readme",
+  "dependencies": {
+    "pixi.js": "^4.2.2"
+  }
+}
