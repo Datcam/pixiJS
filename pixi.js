@@ -11,16 +11,20 @@ class DropDownList {
 
     createRect() {
         let renderer = PIXI.autoDetectRenderer(this.width, this.height, { antialias: true });
-        document.body.appendChild(renderer.view);
-
         let stage = new PIXI.Container();
 
         let graphics = new PIXI.Graphics();
+        graphics.interactive = true;
+        graphics.click = function() {
+            console.log('click');
+        };
 
         graphics.lineStyle(3, this.color, 1);
         graphics.beginFill(this.background, 1);
         graphics.drawRect(170, 50, 160, 50);
         graphics.endFill();
+
+        document.body.appendChild(renderer.view);
 
         stage.addChild(graphics);
 
